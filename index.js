@@ -29,10 +29,27 @@ const questions = [
     type: `list`,
     name: `license`,
     message: `What License would you like to use?`,
+    choices: [`MIT`, `Apache`],
+    transformer: (answer) => {
+        switch(answer) {
+            case (`MIT`):
+                 `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
+                break;
+            case (`Apache`):
+                answer = `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
+        };
+    }
   },
-  `Who contributed to this project?`,
-  `What are the tests for your project?`,
-  `Questions?`,
+//   {
+//     type: 'confirm',
+//     name: 'toBeDelivered',
+//     message: 'Is this for delivery?',
+//     default: false,
+//     transformer: (answer) => (answer ? '👍' : '👎'),
+//   },
+//   `Who contributed to this project?`,
+//   `What are the tests for your project?`,
+//   `Questions?`,
 ];
 
 // function to write README file
