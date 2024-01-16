@@ -1,21 +1,21 @@
 # README Creator
   ## Description
-  This allows people to create a readme file for their programming projects
+  This project allows you to create a README file for your programming project
 
   ## Table of Contents
   undefined
 
   ## Installation
-  You do this by running npm install amd running the index.js file
+  You need to run npm intall and then run the index.js file
 
   ## Usage
-  undefined
+  You need to have access to a console and to node
 
   ## License
-  ![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)
+  ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 
   ## Contributing
-  Clive
+  Clive Makong'o
 
   ## Tests
   N/A
