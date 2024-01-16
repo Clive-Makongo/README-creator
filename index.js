@@ -29,34 +29,30 @@ const questions = [
     type: `list`,
     name: `license`,
     message: `What License would you like to use?`,
-    choices: [`MIT`, `Apache`],
-    transformer: (answer) => {
-        switch(answer) {
-            case (`MIT`):
-                 `![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)`
-                break;
-            case (`Apache`):
-                answer = `[![License](https://img.shields.io/badge/License-Apache_2.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)`;
-        };
-    }
+    choices: [`MIT`, `Apache`, `GNU`],
   },
-//   {
-//     type: 'confirm',
-//     name: 'toBeDelivered',
-//     message: 'Is this for delivery?',
-//     default: false,
-//     transformer: (answer) => (answer ? '👍' : '👎'),
-//   },
-//   `Who contributed to this project?`,
-//   `What are the tests for your project?`,
-//   `Questions?`,
+  {
+    type: `input`,
+    name: `contributing`,
+    message: `Who worked on thid project?`,
+  },
+  {
+    type: `input`,
+    name: `tests`,
+    message: `How do you test your project?`,
+  },
+  {
+    type: `input`,
+    name: `questions`,
+    message: `What are the frequently asked questions?`,
+  },
 ];
 
 // function to write README file
 function writeToFile(data) {
-     fs.writeFile("README.md", generateMarkdown(data), (err) =>
-      err ? console.error(err) : console.log("Success!")
-     );
+    fs.writeFile("README.md", generateMarkdown(data), (err) =>
+        err ? console.error(err) : console.log("Success!")
+    );
 }
 
 // function to initialize program
