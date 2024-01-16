@@ -1,15 +1,15 @@
-# REAME Creator
+# Readme Creator
   ## Description
-  This programme allows you to create a readme file for your project
+  this project allows you to create a readme file
 
   ## Table of Contents
   undefined
 
   ## Installation
-  You need to run npm install and index.js file
+  you need to run npm install
 
   ## Usage
-  You need access to your console to run this file
+  you need access to the console
 
   ## License
   ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
