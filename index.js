@@ -34,7 +34,7 @@ const questions = [
   {
     type: `input`,
     name: `contributing`,
-    message: `Who worked on thid project?`,
+    message: `Who worked on this project?`,
   },
   {
     type: `input`,
